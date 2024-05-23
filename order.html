@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperMart - Order Page</title>
+    <link rel="stylesheet" href="order.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="vegetables-shopping-cart-trolley-grocery-logo-icon-design-vector-171090350.jpg.webp" alt="Nature's Basket Logo">
+            <span>SuperMart</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="dairy.html">Dairy Products</a></li>
+                <li><a href="vegetables.html">Vegetables</a></li>
+                <li><a href="cosmetics.html">Cosmetics and Skin Care</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="loyalty.html">Loyalty Registration</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="order-form">
+            <h2 class="section-title">Order Form</h2>
+            <form action="submit_order.php" method="post" class="order-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+                
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" required></textarea>
+                
+                <label for="product">Select Product:</label>
+                <select id="product" name="product" required>
+                    <option value="foundation">Foundation</option>
+                    <option value="lipstick">Lipstick</option>
+                    <option value="makeup remover">makeup remover</option>
+                    <option value="sunscreen">sunscreen</option>
+                    <option value="facial serum">facial serum</option>
+                    <option value="face mask">facial mask</option>
+                    <option value="lip balm">lip balm</option>
+                    <option value="make up brushes">make up brushes</option>
+                    <option value="milk">milk</option>
+                    <option value="yogurt">yogurt</option>
+                    <option value="baeuty blender">beauty blender</option>
+                    <option value="eggs">Eggs</option>
+                    <option value="cheese">cheese</option>
+                    <option value="moisturizer">moisturizer</option>
+                    <option value="icecream">ice cream</option>
+                    <option value="blush">blush</option>
+                    <option value="sunslik">sunsilk</option>
+                    <option value="setting spray">setting spray</option>
+                    <option value="tresemme shampoo">tresemme shampoo</option>
+                    <option value="kerif">kerif</option>
+                    <option value="margarine">margarine</option>
+                    <option value="lip balm">lip balm</option>
+                    <option value="facial wash">face wash</option>
+                    <option value="concealer">concealer</option>
+                    <option value="remover wipes">remover wipes</option>
+                    <option value="sour cream">sour cream</option>
+
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" required>
+                
+                <button type="submit">Add to Cart</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>SuperMart is a leading grocery retailer with multiple branches across the city. We are committed to providing our customers with a wide range of high-quality products and exceptional service.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="dairy.html">Dairy Products</a></li>
+                    <li><a href="vegetables.html">Vegetables</a></li>
+                    <li><a href="cosmetics.html">Cosmetics and Skin Care</a></li>
+                    <li><a href="order.html">Order</a></li>
+                    <li><a href="loyalty.html">Loyalty Registration</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Phone: 555-555-5555</p>
+                <p>Email: info@SuperMart.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 SuperMart. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
